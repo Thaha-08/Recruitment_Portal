@@ -1,0 +1,87 @@
+/* General reset and body styling */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+/* Page container with background image */
+.interview-list-page {
+  display: flex;
+  height: 100vh;
+  background: url("https://www.aagamcapital.com/images/main-slider/02.jpg")
+    center no-repeat;
+  background-size: cover;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* Content styling */
+.interview-list-content {
+  margin-left: 270px; /* Adjust margin to account for the sidebar width */
+  width: calc(100% - 270px);
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  height: 100%;
+  overflow-y: auto;
+}
+
+/* Title styling */
+.interview-list-title {
+  text-align: center;
+  color: #210f55;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+/* Table styling */
+.interview-list-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.interview-list-table th,
+.interview-list-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+  color: black;
+}
+
+.interview-list-table th {
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+.interview-list-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.interview-list-table tr:hover {
+  background-color: #ddd;
+}
+
+/* Button styling */
+.interview-list-submit-button {
+  border: none;
+  border-radius: 5px;
+  padding: 5px 8px;
+  background: #48126d; /* Button background color */
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.interview-list-submit-button:hover {
+  background-color: #7f49a4; /* Darker shade on hover */
+}

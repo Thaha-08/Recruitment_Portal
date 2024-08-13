@@ -1,0 +1,119 @@
+/* Apply box-sizing to all elements */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+a {
+  color: #666;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.TL-Login-page {
+  display: flex;
+  height: 100vh;
+}
+
+.TL-Login-background {
+  flex: 1;
+  padding: 40px;
+  background: url("../Images/TLLoginBg.jpg") center no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  color: #210f55;
+}
+
+.TL-Login-content {
+  position: relative;
+  right: 34%;
+  width: 30%;
+  background: rgba(255, 255, 255, 0.58); /* Transparent white background */
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+}
+
+.TL-Login-title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #693d0e;
+  font-size: large;
+  font-style: oblique;
+  font-weight: 700;
+}
+
+.TL-Login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.TL-Form-group {
+  margin-bottom: 15px;
+}
+
+.TL-Form-group label {
+  font-size: 13px;
+  margin-bottom: 5px;
+  color: #523030;
+}
+
+.TL-Input-field {
+  width: 100%;
+  background: rgba(231, 219, 219, 0.8); /* Transparent light background */
+  border-radius: 25px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+input {
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+.TL-Login-button {
+  width: 100%;
+  border: none;
+  border-radius: 25px;
+  padding: 14px;
+  background: #7a4700eb;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: ease all 0.3s;
+}
+
+.TL-Login-button:hover {
+  opacity: 0.9;
+}
+
+.TL-Registration-notice {
+  font-size: 13px;
+  text-align: center;
+  color: rgba(231, 219, 219, 0.8);
+  margin-top: 10px;
+}
+
+#forgot-password {
+  display: block;
+  text-align: center;
+  color: rgba(231, 219, 219, 0.8);
+  margin-top: 10px;
+  opacity: 0.6;
+}
+
+#forgot-password:hover {
+  opacity: 1;
+}

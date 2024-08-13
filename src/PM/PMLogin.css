@@ -1,0 +1,104 @@
+/* Apply box-sizing to all elements */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+a {
+  color: #666;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+/* Page container with background image */
+.pm-login-page {
+  display: flex;
+  height: 100vh;
+  background: url("https://media.licdn.com/dms/image/C5612AQGgik6TzWrUSg/article-cover_image-shrink_600_2000/0/1520044543105?e=2147483647&v=beta&t=bqzXEP9O-b_dXEQHcAI25PCyPdVyj9Pdxd2bHizy_Fg")
+    center no-repeat;
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Container for the login content */
+.pm-login-content {
+  position: relative;
+  right: 5rem;
+  width: 30%;
+  background: rgba(255, 255, 255, 0.9); /* Transparent white background */
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Title styling */
+.pm-login-title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #210f55;
+  font-weight: 700;
+  font-size: large;
+}
+
+/* Form styling */
+.pm-login-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.pm-login-form div {
+  margin-bottom: 15px;
+}
+
+.pm-login-form label {
+  font-size: 13px;
+  margin-bottom: 5px;
+  color: #523030;
+}
+
+.pm-login-form input {
+  width: 100%;
+  background: rgba(231, 219, 219, 0.8); /* Transparent light background */
+  border-radius: 25px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  border: none;
+  outline: none;
+}
+
+/* Button styling */
+.pm-login-submit-button {
+  width: 100%;
+  border: none;
+  border-radius: 25px;
+  padding: 14px;
+  background: #7a4700eb;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: ease all 0.3s;
+  margin-top: 1.5rem;
+}
+
+.pm-login-submit-button:hover {
+  opacity: 0.9;
+}
+
+/* BackButton styling if needed */
+.pm-login-back-button {
+  margin-top: 20px;
+  text-align: center;
+  display: block;
+}

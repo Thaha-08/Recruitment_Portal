@@ -1,0 +1,161 @@
+/* Ensure box-sizing is applied globally */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+/* Container for the page */
+.view-applied-candidates-page {
+  display: flex;
+  height: 100vh;
+  background: url("https://media.licdn.com/dms/image/C5612AQGgik6TzWrUSg/article-cover_image-shrink_600_2000/0/1520044543105?e=2147483647&v=beta&t=bqzXEP9O-b_dXEQHcAI25PCyPdVyj9Pdxd2bHizy_Fg")
+    center center no-repeat;
+  background-size: cover;
+}
+
+/* Sidebar area */
+.view-applied-candidates-sidebar {
+  width: 250px;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.8
+  ); /* Reduced opacity for better visibility of the background image */
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+}
+
+/* Content area */
+.view-applied-candidates-content {
+  margin-left: 270px; /* Space for the sidebar */
+  padding: 20px;
+  background: rgba(
+    255,
+    255,
+    255,
+    0.9
+  ); /* Adjusted opacity for improved readability while keeping the image visible */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: calc(100% - 270px); /* Adjust width to account for sidebar */
+  height: 100%;
+  overflow-y: auto;
+}
+
+/* Title styling */
+.view-applied-candidates-title {
+  color: #3e2723; /* Dark chocolate brown color */
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Table styling */
+.view-applied-candidates-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.view-applied-candidates-table th,
+.view-applied-candidates-table td {
+  border: 1px solid #4e342e; /* Dark chocolate color for borders */
+  padding: 8px;
+  text-align: center;
+  color: black;
+  border: 1px solid #4e342e;
+  font-size: 14px; /* Reduced font size */
+}
+
+.view-applied-candidates-table th {
+  background-color: #5a4222e7; /* Dark chocolate color for header */
+  color: #fff;
+}
+
+.view-applied-candidates-table td {
+  color: #3e2723; /* Dark chocolate brown color for text */
+}
+
+.view-applied-candidates-table tr:nth-child(even) {
+  background-color: #f1e8e0; /* Light chocolate background for even rows */
+}
+
+.view-applied-candidates-table tr:hover {
+  background-color: #d7ccc8; /* Slightly darker chocolate for hover effect */
+}
+
+/* Input and button styling */
+.view-applied-candidates-table input[type="text"] {
+  padding: 4px; /* Further reduced padding */
+  margin: 2px; /* Reduced margin */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 12px; /* Reduced font size */
+}
+
+.view-applied-candidates-table button {
+  background-color: #5a4222e7; /* Dark chocolate color for button */
+  border: none;
+  color: white;
+  padding: 6px 12px; /* Further reduced padding */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px; /* Reduced font size */
+  margin: 2px; /* Reduced margin */
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.view-applied-candidates-table button:hover {
+  background-color: #735f22b1; /* Slightly darker color on hover */
+}
+
+.view-applied-candidates-table button:active {
+  background-color: #4e342e; /* Even darker color when button is pressed */
+}
+
+/* Search Bar Container */
+.hr-search-bar-container {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 10; /* Ensure it's above other content */
+}
+
+/* Search Bar Styles */
+.hr-search-bar {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  width: 200px; /* Adjust width as needed */
+}
+
+.loader-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.317); /* Semi-transparent background */
+  z-index: 1000; /* Ensure loader is on top of other content */
+}
+
+.loader {
+  width: 35%;
+  height: 35%;
+}

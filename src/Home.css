@@ -1,0 +1,106 @@
+/* Home.css */
+
+/* General Reset */
+body,
+h1,
+h2,
+p,
+a {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.home-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header Styles */
+.header-section {
+  background: url("./Images/Jobsearch1.jpg") no-repeat center center;
+  background-size: cover;
+  color: #fff;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.header-content-wrapper {
+  max-width: 80%;
+}
+
+.header-title {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.header-subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.header-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.header-button:hover {
+  background-color: #0056b3;
+}
+
+/* Search Section Styles */
+.search-section {
+  padding: 2rem;
+  background-color: #f8f9fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-container {
+  max-width: 600px;
+  width: 100%;
+}
+
+.search-form-wrapper {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.search-input-field {
+  flex: 1;
+  padding: 0.75rem;
+  border: 1px solid #ced4da;
+  border-radius: 0.5rem;
+}
+
+.search-submit-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.search-submit-button:hover {
+  background-color: #0056b3;
+}
+
+/* Footer Styles */
+.footer-section {
+  background-color: #343a40;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: auto;
+}

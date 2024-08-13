@@ -1,0 +1,97 @@
+/* Apply box-sizing to all elements */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+a {
+  color: #666;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+/* Page container with background image */
+.edit-job-description-page {
+  display: flex;
+  height: 100vh;
+  background: url("https://utimaco.com/sites/default/files/styles/ut_stage_l_jpeg/public/2023-01/utimaco-start-stage-1.jpg.webp?itok=m49IG0rp")
+    center no-repeat;
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Container for the edit job description content */
+.edit-job-description-content {
+  position: relative;
+  right: 2rem;
+  width: 28%;
+  background: rgba(255, 255, 255, 0.9); /* Transparent white background */
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0.95;
+}
+
+/* Title styling */
+.edit-job-description-title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #210f55;
+  font-weight: 700;
+  font-size: large;
+}
+
+/* Form styling */
+.edit-job-description-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.edit-job-description-form div {
+  margin-bottom: 15px;
+}
+
+.edit-job-description-form label {
+  font-size: 13px;
+  margin-bottom: 5px;
+  color: #523030;
+}
+
+.edit-job-description-form input {
+  width: 100%;
+  background: rgba(206, 229, 250, 0.8); /* Transparent light background */
+  border-radius: 25px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  border: none;
+  outline: none;
+}
+
+/* Button styling */
+.edit-job-description-submit-button {
+  width: 100%;
+  border: none;
+  border-radius: 25px;
+  padding: 14px;
+  background: #260f64;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: ease all 0.3s;
+}
+
+.edit-job-description-submit-button:hover {
+  opacity: 0.9;
+}

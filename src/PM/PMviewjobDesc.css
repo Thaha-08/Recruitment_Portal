@@ -1,0 +1,98 @@
+/* Page Container with Background Image */
+.pm-viewjobdesc-page {
+  display: flex;
+  height: 100vh;
+  background: url("https://media.licdn.com/dms/image/C5612AQGgik6TzWrUSg/article-cover_image-shrink_600_2000/0/1520044543105?e=2147483647&v=beta&t=bqzXEP9O-b_dXEQHcAI25PCyPdVyj9Pdxd2bHizy_Fg")
+    center center no-repeat;
+  background-size: cover;
+}
+
+/* Content Area */
+.pm-viewjobdesc-content {
+  margin-left: 270px; /* Space for the sidebar */
+  padding: 20px;
+  background: rgba(
+    255,
+    255,
+    255,
+    0.8
+  ); /* Semi-transparent background for content area */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: calc(100% - 270px); /* Adjust width to account for sidebar */
+  height: 100%;
+  overflow-y: auto;
+  position: relative; /* Add relative positioning for search bar container */
+}
+
+/* Search Bar Container */
+.pm-search-bar-container {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 10; /* Ensure it's above other content */
+}
+
+/* Search Bar Styles */
+.pm-search-bar {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  width: 200px; /* Adjust width as needed */
+}
+
+/* Table Styles */
+.pm-viewjobdesc-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.pm-viewjobdesc-table th,
+.pm-viewjobdesc-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+}
+
+.pm-viewjobdesc-table td {
+  color: #111111;
+}
+.pm-viewjobdesc-h4 {
+  font-weight: 600;
+  font-style: oblique;
+  font-size: x-large;
+}
+
+.pm-viewjobdesc-table th {
+  background-color: #f2f2f2;
+  color: #111111;
+}
+
+/* Button Styles */
+.pm-viewjobdesc-button {
+  background-color: #1f0e51f0;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  margin: 0 5px;
+  transition: background-color 0.3s ease;
+}
+
+.pm-viewjobdesc-button:hover {
+  background-color: #0c4861;
+}
+
+.pm-delete-button {
+  background-color: #3c3a3ae9; /* Red color for delete button */
+  position: relative;
+  left: 1rem;
+}
+
+.pm-delete-button:hover {
+  background-color: #410402fa;
+}

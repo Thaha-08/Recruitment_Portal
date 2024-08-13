@@ -1,0 +1,66 @@
+
+
+CREATE TABLE AdminTable(
+    username VARCHAR(20),
+    password varchar(20),
+    type varchar(20)
+);
+
+CREATE TABLE JobDescription(
+    jobId NUMBER(20),
+    jobRole VARCHAR(20),
+    jobStatus VARCHAR(20) DEFAULT 'Pending',
+    experience NUMBER (3),
+    location VARCHAR(20)
+);
+
+CREATE TABLE RequestToHr(
+    jobId NUMBER(20),
+    jobRole VARCHAR(20),
+    experience NUMBER(3),
+    location VARCHAR(20)
+);
+
+CREATE TABLE WorkBench(
+    empId NUMBER(20),
+    empname VARCHAR(20),
+    skills VARCHAR(20),
+     experience NUMBER(3)
+    
+);
+
+CREATE TABLE AppliedCandidates(
+    candidateId VARCHAR(20),
+    candidateName VARCHAR(20),
+    candidateAge NUMBER(3),
+    candidateGender VARCHAR(20),
+    candidateDegree VARCHAR(20),
+    candidateSkills VARCHAR(20),
+    candidateExpectedCTC NUMBER(10),
+    candidateExperience NUMBER(3),
+    candidateAddress VARCHAR(20),
+    selected VARCHAR(20),
+    interview VARCHAR(20)
+    
+);
+
+CREATE TABLE AssignedCandidate(
+    empId NUMBER(20) PRIMARY KEY,
+     jobId NUMBER(20) NOT NULL,
+     name VARCHAR(20),
+     skills VARCHAR(20)
+);
+Drop table AssignedCandidate;
+
+
+SELECT * FROM  AdminTable;
+
+SELECT * FROM JobDescription;
+
+SELECT * FROM RequestToHr;
+
+SELECT * FROM WorkBench;
+
+SELECT * FROM  AppliedCandidates;
+
+SELECT * FROM AssignedCandidate;

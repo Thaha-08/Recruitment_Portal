@@ -1,0 +1,104 @@
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  } /* Adjust based on the number of slides */
+}
+
+.rs-container {
+  background-color: #f9f9f9;
+  padding: 60px 0;
+}
+
+.rs-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  overflow: hidden;
+}
+
+.rs-title {
+  font-size: 30px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.rs-subtitle {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.rs-content {
+  overflow: hidden;
+}
+
+.rs-slider {
+  display: flex;
+  flex-direction: row; /* Ensure slides are horizontal */
+  width: 100%; /* Full width to fit all slides */
+  transition: transform 0.5s ease-in-out; /* Smooth transition effect */
+}
+
+.rs-slide {
+  flex: 0 0 25%; /* Each slide takes up 25% of the width to fit 4 slides in a row */
+  box-sizing: border-box;
+  padding: 0 10px; /* Reduced padding between slides */
+  height: 300px; /* Set height of slides */
+  display: flex; /* Flex to center content */
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+}
+
+.rs-review {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  height: 100%;
+  width: 100%; /* Full width to fill the slide container */
+  max-width: 350px; /* Maximum width for each card */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto; /* Center the card */
+}
+
+.rs-review-img {
+  width: 60px; /* Fixed width for the image container */
+  height: 60px; /* Fixed height for the image container */
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 15px;
+  display: flex; /* Flex to center image */
+  align-items: center; /* Center image vertically */
+  justify-content: center; /* Center image horizontally */
+}
+
+.rs-review-img img {
+  width: 100%; /* Ensure the image fills the container width */
+  height: 100%; /* Ensure the image fills the container height */
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
+}
+
+.rs-review-txt {
+  text-align: center;
+}
+
+.rs-review-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.rs-review-comment {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 15px;
+}

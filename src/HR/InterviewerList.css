@@ -1,0 +1,84 @@
+/* General reset and body styling */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+/* Page container with background image */
+.interviewer-list-page {
+  display: flex;
+  height: 100vh;
+  background: url("https://wallpaperaccess.com/full/4623493.jpg") center
+    no-repeat;
+  background-size: cover;
+  align-items: flex-start;
+  justify-content: flex-start;
+  opacity: 1;
+}
+
+/* Sidebar styling */
+.interviewer-sidebar {
+  width: 250px;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+}
+
+/* Content styling */
+.interviewer-content {
+  margin-left: 270px; /* Adjust margin to account for the sidebar width */
+  width: calc(100% - 270px);
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  height: 100%;
+  overflow-y: auto;
+}
+
+/* Title styling */
+.interviewer-title {
+  color: #2c3e50; /* Darker blue color for title */
+
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Table styling */
+.interviewer-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.interviewer-table th,
+.interviewer-table td {
+  border: 1px solid #ddd;
+  padding: 8px; /* Reduced padding */
+  text-align: center;
+  color: #362f1d;
+  font-size: 14px; /* Slightly smaller font size */
+}
+
+.interviewer-table th {
+  background-color: #5a4222e7;
+  color: white;
+}
+
+.interviewer-table tr:nth-child(even) {
+  background-color: #fffaeb;
+}
+
+.interviewer-table tr:hover {
+  background-color: #e0e0e0; /* Light grey hover effect */
+}

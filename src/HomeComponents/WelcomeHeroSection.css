@@ -1,0 +1,109 @@
+.whs-container {
+  background-image: url("../Images/bg5.png");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column; /* Align items vertically */
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.whs-nav {
+  width: 100%;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  /* Add padding for spacing */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed; /* Make nav absolute for overlap */
+  top: 0; /* Align to top */
+  z-index: 150; /* Ensure it’s on top of the hero section */
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.whs-logo {
+  width: 100px;
+  font-weight: bold;
+}
+
+.my-text {
+  color: #fff; /* Color for "My" */
+}
+
+.logo-text {
+  color: gold; /* Color for "Logo" */
+}
+.whs-nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px; /* Spacing between links */
+}
+
+.whs-nav-links li a {
+  text-decoration: none; /* Remove underline */
+  color: #fff; /* Link color */
+  transition:
+    color 0.3s,
+    transform 0.3s; /* Smooth transition for hover */
+  display: inline-flex; /* Use inline-flex for alignment */
+  align-items: center; /* Align items vertically */
+}
+
+.whs-nav-links li a i {
+  margin-right: 5px; /* Space between icon and text */
+}
+
+.whs-nav-links li a:hover {
+  color: gold; /* Change color on hover */
+  font-weight: bold;
+  transform: scale(1.1);
+}
+
+.whs-inner {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.whs-title {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 100; /* Set z-index */
+  opacity: 0; /* Initial opacity for animation */
+  transform: translateX(-50px); /* Start position for animation */
+  animation: slideInFromLeft 1s forwards; /* Animation */
+  animation-delay: 0.2s; /* Delay for subtitle animation */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1); /* Background shadow for title */
+}
+
+.whs-subtitle {
+  font-size: 24px;
+  margin-bottom: 40px;
+  position: relative;
+  z-index: 70; /* Set z-index */
+  opacity: 0; /* Initial opacity for animation */
+  transform: translateX(50px); /* Start position for animation */
+  animation: slideInFromRight 1s forwards; /* Animation */
+  animation-delay: 0.6s; /* Delay for subtitle animation */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1); /* Background shadow for title */
+}
+
+@keyframes slideInFromLeft {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

@@ -1,0 +1,64 @@
+/* General reset and body styling */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+/* Page container styling */
+.not-found-page {
+  display: flex;
+  height: 100vh;
+  background: url("https://th.bing.com/th/id/R.53c67dce2d7a212287a80c00a02d9d8b?rik=J%2fOZHtnlDyFPTA&riu=http%3a%2f%2faccount.ugolysoft.com%2fpos%2fimages%2fPAGE-NOT-FOUND.png&ehk=UcKE8UtZKcq1onojHNzoCVe6J1e4wlLv5LEY1MpIjU4%3d&risl=&pid=ImgRaw&r=0")
+    center no-repeat; /* Use the provided background image */
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Content styling */
+.not-found-content {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+}
+
+/* Title styling */
+.not-found-title {
+  font-size: 100px;
+  color: #e74c3c; /* Red color for error code */
+  margin-bottom: 10px;
+}
+
+/* Message styling */
+.not-found-message {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.not-found-submessage {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+/* Home link styling */
+.not-found-home-link {
+  font-size: 18px;
+  color: #007bff; /* Primary color for link */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.not-found-home-link:hover {
+  text-decoration: underline;
+  color: #0056b3; /* Darker shade on hover */
+}

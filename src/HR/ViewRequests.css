@@ -1,0 +1,113 @@
+/* Apply box-sizing to all elements */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+/* Container for the page */
+.view-requests-page {
+  display: flex;
+  height: 100vh;
+  background: url("https://media.licdn.com/dms/image/C5612AQGgik6TzWrUSg/article-cover_image-shrink_600_2000/0/1520044543105?e=2147483647&v=beta&t=bqzXEP9O-b_dXEQHcAI25PCyPdVyj9Pdxd2bHizy_Fg")
+    center center no-repeat;
+  background-size: cover;
+}
+
+/* Sidebar area */
+.view-requests-sidebar {
+  width: 250px;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+}
+
+/* Content area */
+.view-requests-content {
+  margin-left: 270px; /* Space for the sidebar */
+  padding: 20px;
+  background: rgba(
+    255,
+    255,
+    255,
+    0.9
+  ); /* Semi-transparent background for content area */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: calc(100% - 270px); /* Adjust width to account for sidebar */
+  height: 100%;
+  overflow-y: auto;
+}
+
+/* Title styling */
+.view-requests-title {
+  color: #3e2723; /* Dark chocolate brown color */
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Table styling */
+.view-requests-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.view-requests-table th,
+.view-requests-table td {
+  border: 1px solid #4e342e; /* Dark chocolate color for borders */
+  padding: 12px;
+  text-align: center;
+}
+
+.view-requests-table th {
+  background-color: #5a4222e7; /* Dark chocolate color for header */
+  color: #fff;
+}
+
+.view-requests-table td {
+  color: #3e2723; /* Dark chocolate brown color for text */
+}
+
+.view-requests-table tr:nth-child(even) {
+  background-color: #f1e8e0; /* Light chocolate background for even rows */
+}
+
+.view-requests-table tr:hover {
+  background-color: #d7ccc8; /* Slightly darker chocolate for hover effect */
+}
+
+/* Link styling inside the content */
+.view-requests-content a {
+  color: #3e2723; /* Dark chocolate color for link text */
+  text-decoration: none;
+}
+
+.view-requests-content a:hover {
+  color: #5d4037; /* Slightly lighter chocolate color on hover */
+}
+
+/* Search Bar Container */
+.hr-search-bar-container {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 10; /* Ensure it's above other content */
+}
+
+/* Search Bar Styles */
+.hr-search-bar {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  width: 200px; /* Adjust width as needed */
+}

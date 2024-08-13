@@ -1,0 +1,53 @@
+.header-section {
+  background-color: #fff;
+  padding: 20px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  text-transform: uppercase;
+}
+
+.navbar-brand span {
+  color: #337ab7;
+}
+
+.navbar-nav {
+  margin-top: 20px;
+}
+
+.navbar-nav li {
+  margin-right: 20px;
+}
+
+.navbar-nav li a {
+  color: #333;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav li a:hover {
+  color: #337ab7;
+}
+
+.navbar-toggle {
+  border: none;
+  padding: 10px;
+  font-size: 18px;
+  line-height: 1;
+  background-color: #337ab7;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.navbar-toggle:hover {
+  background-color: #23527c;
+}
+
+.menu-ui-design {
+  padding-top: 20px;
+}

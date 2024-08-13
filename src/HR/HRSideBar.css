@@ -1,0 +1,38 @@
+/* Sidebar Container */
+.hr-sidebar {
+  width: 250px;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+}
+
+.hr-title {
+  color: #372612f4;
+}
+/* Sidebar Links */
+.hr-sidebar-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #372612f4; /* Change text color */
+  font-size: 16px;
+  margin-bottom: 15px;
+  transition: color 0.3s ease;
+  font-family: "Arial", sans-serif; /* Change font family */
+}
+
+.hr-sidebar-link:hover {
+  color: #53360ae0; /* Change hover color */
+}
+
+/* Sidebar Icons */
+.hr-sidebar-icon {
+  margin-right: 10px;
+  font-size: 18px; /* Adjust icon size */
+  color: #372612f4; /* Change icon color */
+}

@@ -1,0 +1,100 @@
+/* General section styling */
+.lts-container {
+  padding: 20px;
+  background-color: #b7adad;
+}
+
+/* Container for flex layout */
+.lts-inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px; /* Increase space between cards */
+  justify-content: center; /* Center align the cards */
+}
+
+/* List styling */
+.lts-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping if more than 5 cards */
+  gap: 30px; /* Increase space between cards */
+  justify-content: center; /* Center align the cards */
+}
+
+/* Card item styling */
+.lts-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease,
+    background 0.3s ease; /* Include background transition */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px; /* Increase padding for larger content area */
+  width: 200px; /* Adjust card width */
+  text-align: center;
+  flex: 0 1 auto; /* Allow card to grow, but not shrink */
+}
+
+/* Hover effect */
+.lts-item:hover {
+  background: linear-gradient(
+    135deg,
+    #4e4e4d,
+    #060e47
+  ); /* Linear gradient on hover */
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+/* Icon styling */
+.lts-icon {
+  font-size: 2.5rem; /* Increase icon size */
+  color: #000; /* Black icon color */
+  margin-bottom: 15px; /* Increase spacing between icon and title */
+}
+
+/* Change icon color on card hover */
+.lts-item:hover .lts-icon {
+  color: #ffffff; /* White icon color on hover */
+}
+
+/* Title styling */
+.lts-title {
+  margin: 15px 0; /* Increase spacing around the title */
+  font-size: 1.5rem; /* Increase title font size */
+  color: #333; /* Default title color */
+}
+
+/* Change title color on card hover */
+.lts-item:hover .lts-title a {
+  color: #ffffff; /* White title color on hover */
+}
+
+/* Link styling */
+.lts-title a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.lts-title a:hover {
+  color: #007bff; /* Optional: Color change on link hover */
+}
+
+/* Count styling */
+.lts-count {
+  font-size: 1rem; /* Increase font size for the count */
+  color: #888;
+}
+
+html {
+  scroll-behavior: smooth; /* Smooth scrolling */
+}

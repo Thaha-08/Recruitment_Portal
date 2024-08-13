@@ -1,0 +1,83 @@
+/* Container setup */
+.ws-container {
+  padding: 50px 0;
+  background: #f4f4f4; /* Example background color */
+}
+
+.ws-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.ws-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333; /* Example color */
+}
+
+.ws-subtitle {
+  font-size: 16px;
+  margin-bottom: 30px;
+  color: #666; /* Example color */
+}
+
+.ws-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.ws-item {
+  flex: 1 1 30%;
+  text-align: center;
+  padding: 20px;
+  background: #ffffff; /* Background color */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.ws-icon {
+  font-size: 50px; /* Set icon size */
+  color: #333; /* Default icon color */
+  margin-bottom: 10px; /* Reduced space between icon and title */
+}
+
+.ws-item-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333; /* Default title color */
+}
+
+.ws-item-text {
+  font-size: 16px;
+  color: #666; /* Default text color */
+}
+
+/* Hover effects */
+.ws-item:hover {
+  background: linear-gradient(
+    135deg,
+    #4e4e4d,
+    #060e47
+  ); /* Dark background on hover */
+  color: white; /* Default text color on hover */
+  transform: translateY(-10px); /* Lift card up */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+.ws-item:hover .ws-icon {
+  color: white; /* Change icon color to white on hover */
+}
+
+.ws-item:hover .ws-item-title,
+.ws-item:hover .ws-item-text {
+  color: white; /* Change text color to white on hover */
+}
+
+html {
+  scroll-behavior: smooth; /* Smooth scrolling */
+}

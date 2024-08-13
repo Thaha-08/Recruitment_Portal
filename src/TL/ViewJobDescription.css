@@ -1,0 +1,89 @@
+/* Apply box-sizing to all elements */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+a {
+  color: #666;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+/* Page container styling */
+.view-job-description-page {
+  display: flex;
+  height: 100vh;
+  background: url("https://utimaco.com/sites/default/files/styles/ut_stage_l_jpeg/public/2023-01/utimaco-start-stage-1.jpg.webp?itok=m49IG0rp")
+    center no-repeat;
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Container for job description content */
+.view-job-description-content {
+  width: 80%;
+  background: rgba(255, 255, 255, 0.9); /* Transparent white background */
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0.97;
+}
+
+/* Title styling */
+.view-job-description-title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #210f55;
+  font-weight: 700;
+  font-size: large;
+}
+
+/* Table styling */
+.view-job-description-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.view-job-description-table th,
+.view-job-description-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.view-job-description-table th {
+  background-color: #210f55;
+  color: white;
+}
+
+.view-job-description-table tr:nth-child(even) {
+  background-color: #f3f3f3;
+}
+
+/* Button styling */
+.view-job-description-edit-button {
+  border: none;
+  border-radius: 25px;
+  padding: 14px 28px;
+  background: #210f55;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: ease all 0.3s;
+}
+
+.view-job-description-edit-button:hover {
+  opacity: 0.9;
+}

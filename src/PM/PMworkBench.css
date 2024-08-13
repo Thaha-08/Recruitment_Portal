@@ -1,0 +1,101 @@
+/* General reset and body styling */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+/* Page container with background image */
+.pm-workbench-page {
+  display: flex;
+  height: 100vh;
+  background: url("https://wallpaperaccess.com/full/656693.jpg") center
+    no-repeat;
+  background-size: cover;
+  align-items: center;
+  justify-content: flex-start;
+  opacity: 0.9;
+}
+
+/* Sidebar styling */
+.pm-workbench-sidebar {
+  width: 250px;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+}
+
+/* Content styling */
+.pm-workbench-content {
+  margin-left: 270px; /* Adjust margin to account for the sidebar width */
+  width: calc(100% - 270px);
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  height: 100%;
+  overflow-y: auto;
+  opacity: 0.9;
+}
+
+/* Title styling */
+.pm-workbench-title {
+  text-align: center;
+  color: #210f55;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+/* Table styling */
+.pm-workbench-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.pm-workbench-table th,
+.pm-workbench-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+  color: #010000;
+}
+
+.pm-workbench-table th {
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+.pm-workbench-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.pm-workbench-table tr:hover {
+  background-color: #ddd;
+}
+
+/* Button styling */
+.pm-workbench-assign-button {
+  background: #240e57; /* Red color */
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.pm-workbench-assign-button:hover {
+  background-color: #c62828;
+}

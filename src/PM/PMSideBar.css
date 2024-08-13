@@ -1,0 +1,55 @@
+/* Sidebar Styles */
+.pm-sidebar {
+  width: 250px;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+}
+
+/* Sidebar Links */
+.pm-sidebar-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #210f55;
+  font-size: 16px;
+  margin-bottom: 15px;
+  transition: color 0.3s ease;
+}
+
+.pm-sidebar-link:hover {
+  color: #7a4700eb;
+}
+
+/* Sidebar Icons */
+.pm-sidebar-icon {
+  margin-right: 10px;
+  font-size: 18px; /* Adjust icon size */
+}
+
+/* Sidebar Buttons */
+.pm-sidebar-button {
+  background-color: #7a4700eb;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+.pm-sidebar-button .pm-sidebar-icon {
+  margin-right: 8px; /* Adjust margin for button icon */
+}
+
+.pm-sidebar-button:hover {
+  background-color: #6b3b00;
+}

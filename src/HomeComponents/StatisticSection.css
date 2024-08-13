@@ -1,0 +1,102 @@
+/* Update the color of the H3 content */
+.ss-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #ffffff; /* Ensure the title text is white */
+}
+
+/* Container setup */
+.ss-container {
+  padding: 50px 0;
+  background-image: url("https://miro.medium.com/v2/resize:fit:1358/1*7cp2mYVxVbTZ1-AYVhYpPA.jpeg");
+  background-size: cover; /* Ensures the background image covers the container */
+  background-attachment: fixed; /* Fixes the background image */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevents repeating the background image */
+  position: relative; /* Ensure that the overlay is positioned relative to this container */
+}
+
+.ss-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5); /* Adjust color and transparency here */
+  z-index: 0; /* Ensure it is behind the content */
+}
+
+.ss-inner {
+  position: relative; /* Ensures that the inner content is above the overlay */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  z-index: 1000;
+}
+
+.ss-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #ffffff; /* Ensure the title text is white */
+}
+
+.ss-stats {
+  display: grid; /* Use grid for better alignment */
+  grid-template-columns: repeat(4, 1fr); /* Four equal columns */
+  gap: 20px; /* Space between items */
+  justify-items: center; /* Center items in their grid cells */
+}
+
+.ss-stat {
+  text-align: center;
+  /* Remove or adjust the background color as needed */
+  /* background: rgba(0, 0, 0, 0.6); Optional: Remove background color */
+  padding: 20px;
+  border-radius: 8px; /* Rounded corners for a nicer look */
+}
+
+.ss-inner h3 {
+  color: white;
+}
+
+.ss-stat-icon {
+  font-size: 36px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.ss-stat-content {
+  font-size: 18px;
+}
+
+.ss-stat-number {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.ss-stat-text {
+  font-size: 16px;
+  color: #ffffff;
+}
+
+/* Responsive styles */
+
+@media (max-width: 768px) {
+  .ss-stats {
+    grid-template-columns: repeat(2, 1fr); /* Two columns on medium screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .ss-stats {
+    grid-template-columns: 1fr; /* Single column on small screens */
+  }
+}
+
+html {
+  scroll-behavior: smooth; /* Smooth scrolling */
+}

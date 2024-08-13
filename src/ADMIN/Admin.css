@@ -1,0 +1,113 @@
+/* Apply box-sizing to all elements */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+a {
+  color: #666;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+#admin-login-page {
+  display: flex;
+  height: 100vh;
+}
+
+.admin-background {
+  flex: 1;
+  padding: 40px;
+  background: url("../Images/JobSearch2.jpg") center no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  color: #210f55;
+}
+
+.admin-login {
+  width: 30%;
+  background: rgba(255, 255, 255, 0.443); /* Transparent white background */
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+}
+
+.admin-login-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: x-large;
+  font-weight: 700;
+  font-style: oblique;
+}
+
+.admin-form-login {
+  display: flex;
+  flex-direction: column;
+}
+
+.admin-form-login label {
+  font-size: 13px;
+  margin-bottom: 5px;
+  color: #523030;
+}
+
+.admin-input-email,
+.admin-input-password {
+  width: 100%;
+  background: rgba(231, 219, 219, 0.8); /* Transparent light background */
+  border-radius: 25px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+input {
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+.admin-submit-button {
+  width: 100%;
+  border: none;
+  border-radius: 25px;
+  padding: 14px;
+  background: #240e57;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: ease all 0.3s;
+}
+
+.admin-submit-button:hover {
+  opacity: 0.9;
+}
+
+.admin-notice {
+  font-size: 13px;
+  text-align: center;
+  color: rgba(231, 219, 219, 0.8);
+  margin-top: 10px;
+}
+
+#admin-forgot {
+  display: block;
+  text-align: center;
+  color: rgba(231, 219, 219, 0.8);
+  margin-top: 10px;
+  opacity: 0.6;
+}
+
+#admin-forgot:hover {
+  opacity: 1;
+}

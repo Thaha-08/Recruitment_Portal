@@ -1,0 +1,123 @@
+/* Ensure box-sizing is applied globally */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.apply-new-candidate-page {
+  display: flex;
+  height: 100vh;
+  background-color: #f9f9f9; /* Fallback color */
+  background: url("https://i0.wp.com/leadingwithtrust.com/wp-content/uploads/2014/04/job-interview.jpg?resize=960%2C600&ssl=1")
+    center center / cover no-repeat; /* Background image */
+}
+
+/* Sidebar styling */
+.apply-new-candidate-sidebar {
+  width: 250px;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.9
+  ); /* Semi-transparent white background */
+  padding: 15px; /* Reduced padding */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+}
+
+/* Content area styling */
+.apply-new-candidate-content {
+  margin-left: 270px; /* Space for the sidebar */
+  padding: 20px; /* Slightly increased padding */
+  background: rgba(
+    255,
+    255,
+    255,
+    0.9
+  ); /* Semi-transparent background for content */
+  border-radius: 8px; /* Slightly rounded corners */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  width: calc(100% - 270px); /* Adjust width to account for sidebar */
+  height: 100%;
+  overflow-y: auto;
+}
+
+/* Title styling */
+.apply-new-candidate-title {
+  color: #3e2723; /* Dark chocolate brown color */
+  font-size: 24px; /* Adjusted font size */
+  margin-bottom: 20px; /* Spacing below the title */
+  font-weight: 500;
+  text-align: center;
+}
+
+/* Form styling */
+.apply-new-candidate-form {
+  width: 55%;
+  max-width: 500px; /* Max width for larger screens */
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+}
+
+.apply-new-candidate-form div {
+  margin-bottom: 15px;
+}
+
+.apply-new-candidate-form label {
+  font-size: 16px;
+  color: #3e2723; /* Dark chocolate brown color */
+  margin-bottom: 5px;
+  display: block;
+}
+
+.apply-new-candidate-form input {
+  width: 100%;
+  background: rgba(231, 219, 219, 0.8); /* Light transparent background */
+  border-radius: 5px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  color: #333;
+}
+
+.apply-new-candidate-form input:focus {
+  border-color: #5a4222;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.apply-new-candidate-form button {
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  padding: 14px;
+  background: #5a4222; /* Dark chocolate color */
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.apply-new-candidate-form button:hover {
+  background: #3e2723; /* Slightly darker chocolate color on hover */
+}
+
+.apply-new-candidate-form button:active {
+  background: #2c1b1a; /* Even darker chocolate color when button is pressed */
+}

@@ -1,0 +1,106 @@
+/* General reset and body styling */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+/* Page container with background image */
+.pm-req-history-page {
+  display: flex;
+  height: 100vh;
+  background: url("https://www.aagamcapital.com/images/main-slider/02.jpg")
+    center no-repeat;
+  background-size: cover;
+  align-items: center;
+  justify-content: flex-start;
+  opacity: 1;
+}
+
+/* Sidebar styling */
+.pm-req-sidebar {
+  width: 250px;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+}
+
+/* Content styling */
+.pm-req-history-content {
+  margin-left: 270px; /* Adjust margin to account for the sidebar width */
+  width: calc(100% - 270px);
+  padding: 20px;
+  background: rgba(
+    255,
+    255,
+    255,
+    0.9
+  ); /*rgba(255, 255, 255, 0.9); Semi-transparent white background */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  height: 100%;
+  overflow-y: auto;
+}
+
+/* Title styling */
+.pm-req-history-title {
+  text-align: center;
+  color: #210f55;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+/* Table styling */
+.pm-req-history-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.pm-req-history-table th,
+.pm-req-history-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+  color: black;
+}
+
+.pm-req-history-table th {
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+.pm-req-history-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.pm-req-history-table tr:hover {
+  background-color: #ddd;
+}
+
+/* Search Bar Container */
+.pm-search-bar-container {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 10; /* Ensure it's above other content */
+}
+
+/* Search Bar Styles */
+.pm-search-bar {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  width: 200px; /* Adjust width as needed */
+}
